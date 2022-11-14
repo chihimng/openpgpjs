@@ -98,6 +98,7 @@ export class Subkey {
   public getCreationTime(): Date;
   public getAlgorithmInfo(): AlgorithmInfo;
   public getKeyID(): KeyID;
+  public getExpirationTime(userID?: UserID, config?: Config): Promise<Date | typeof Infinity | null>;
 }
 
 export interface User {
